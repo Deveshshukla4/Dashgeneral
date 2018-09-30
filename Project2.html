@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+    <style>
+    header {
+      text-align: center;
+      background: url('http://wallpaper.zone/img/2639554.png');
+      background-size: 95% 550px;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 15px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    body {
+         background: #257;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(150,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="">
+    <h1>Dev's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Racing Games</a></li>
+      <li><a href="#">Action Games</a></li>
+      <li><a href="#">Adventure Games</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Welcome To My Blog Fellow Gamers</h2>
+    <p>Games teach us more than you could ever imagine. That's right guys:-
+    Games teaches us the very fundamental logics of problem solving, thinking ahead and Most Important skill of all "ENGLISH".</p>
+       Like If you agree with this.
+       <button>Like</button>
+  </article>
+    <script>
+    $("button").on("click", function() {
+      alert("Clicked");
+    });
+    $("body").on("click", function() { alert("No clicks Allowed");
+    });
+  </script>
+</body>

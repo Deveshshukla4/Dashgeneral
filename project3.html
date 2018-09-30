@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #564123;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 20px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: -30px 0 10px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://cdn.ndtv.com/tech/gadgets/cover_quantum_break_microsoft.jpg");
+}
+.second{
+  background-image: url("https://farm6.staticflickr.com/5624/23815901722_4d1edf4ed1_b.jpg");
+}
+.third {
+  background-image: url("http://cdn.pastemagazine.com/www/articles/god%20of%20war%202016%20pic%201.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Gamer's Zone</h1>
+<h2>Fresh New Games</h2>
+<div class="first">
+  <p>Quantum Break <span class="price">$9.99</span><br />
+  <small>Quantum Break is a science fiction, action-adventure third-person shooter video game developed by Remedy Entertainment and published by Microsoft Studios. The game was released worldwide for Microsoft Windows and Xbox One in April 2016.</small></p>
+</div>
+
+<div class="second">
+  <p>Uncharted 4: A Theif's End <span class="price">$14.50</span><br />
+  <small>Uncharted 4: A Thief's End is an action-adventure video game developed by Naughty Dog and published by Sony Interactive Entertainment for the PlayStation 4 video game console. The game was released worldwide on May 10, 2016.</small></p>
+</div>
+  
+<div class="third">
+  <p>God Of War 2016 <span class="price">$14.00</span><br />
+  <small>God of War is an upcoming third-person action-adventure video game in development by Santa Monica Studio and to be published by Sony Interactive Entertainment (SIE) for the PlayStation 4 (PS4) console. It will be the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
